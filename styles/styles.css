@@ -2,32 +2,40 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Lora', serif;
+    line-height: 2;
 }
 
 .container-fluid {
     height: 100%;
     min-height: 100%;
-    padding: 0;
+    /* padding: 0; */
 }
 
 h1 {
     font-size: 3em;
+    /* padding: 20px; */
 }
 
 h4 {
     color: #9B9A97;
-    font-size: 1em;
+    font-size: 0.8em;
     text-transform: uppercase;
 }
 
 ul {
     list-style-type: none; /* Remove bullets */
     padding: 0; /* Remove padding */
-    /* margin: 0;  */
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
 }
 
 a {
     color: inherit;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -54,7 +62,7 @@ a:hover {
 }
 
 .image-section {
-    background-image: url('assets/images/standish-homepage.png');
+    background-image: url('../assets/images/standish-homepage.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,7 +73,16 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* padding: 3.5rem;
+     */
+    padding-top: 8rem;
+    padding-right: 5rem;
+    padding-left: 3rem;
+    /* padding: 3rem; */
+    /* padding: 20px;
+    margin: 40px 0; */
 }
 
 footer {

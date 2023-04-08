@@ -11,6 +11,13 @@ body, html {
     /* padding: 0; */
 }
 
+.custom-container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box; /* Add this line to prevent horizontal scrolling */
+}
+
 h1 {
     font-size: 3em;
     /* padding: 20px; */
@@ -75,15 +82,116 @@ a:hover {
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    /* padding: 3.5rem;
-     */
     padding-top: 8rem;
     padding-right: 5rem;
     padding-left: 3rem;
-    /* padding: 3rem; */
-    /* padding: 20px;
-    margin: 40px 0; */
 }
+
+.portfolio-section {
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #e9ecef; /* Add this line to create a subtle horizontal divider */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 2%;
+    justify-items: stretch;
+    align-items: start;
+    padding: 2rem;
+    max-width: 1200px; /* Add this line to set a max-width for the grid container */
+    margin: 0 auto; /* Add this line to center the grid container */
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    /* background-color: blue; */
+    text-align: left;
+    padding: 1rem;
+    /* border: 1px solid #dee2e6; */
+    /* border-radius: 4px; */
+    transition: 0.3s;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.015);
+    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.portfolio-item h5 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-item p {
+    margin: 0;
+}
+
+.portfolio-img {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-img img {
+    flex-grow: 1;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0;
+}
+
+.portfolio-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.portfolio-img h5,
+.portfolio-img p {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    margin: 0;
+}
+
+.portfolio-img h5 {
+    bottom: 2rem; /* Adjust this line to change the vertical position of the company name */
+    left: 0.5rem; /* Change this line to align the text to the left */
+}
+
+.portfolio-img p {
+    display: block; /* Change this line to show the company description */
+    bottom: 0.5rem; /* Adjust this line to change the vertical position of the company description */
+    left: 0.5rem; /* Change this line to align the text to the left */
+}
+
 
 footer {
     background-color: #f8f9fa;

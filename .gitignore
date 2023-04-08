@@ -1,0 +1,15 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript build output
+build/
+
+# Development environment
+.env
+
+# Logs and caches
+*.log
+.cache/
+
+# Docker build artifacts
+.dockerignore

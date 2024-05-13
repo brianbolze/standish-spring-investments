@@ -8,7 +8,8 @@
     <meta name="author" content="Brian Bolze, Standish Spring Investments">
     <title>Standish Spring Investments</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <link rel="stylesheet" href="styles/output.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     
     <!-- Custom Fonts -->
@@ -29,138 +30,148 @@
     <!-- <meta name="twitter:image" content="URL to your site's preview image"> -->
 
 </head>
-<body>
-    <main>
-        <div class="row homepage">
-            <div class="col-md-6 p-0">
-                <div class="image-section"></div>
-            </div>
-            <div class="col-md-6 p-4">
-                <div class="content-section">
-                    <h4>Based in Duxbury, MA 02332</h4>
-                    <div class="spacer"></div>
-                    <h1>We invest in <span class="hero-text">founders.</span></h1>
-                    <div class="spacer"></div>
-                    <div class="spacer"></div>
-                    <h4>Areas</h4>
-                    <ul>
-                        <li>Energy Transition</li>
-                        <li>Consumer Tech</li>
-                        <li>Local Businesses</li>
-                        <li>AI & Automation</li>
-                    </ul>
-                    <div class="spacer"></div>
-                    <div class="spacer"></div>
-                    <h4>About Us</h4>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/steve-bolze-8315aba1" target="_blank" rel="noreferrer">Steve Bolze</a></li>
-                        <li><a href="https://brianbolze.com" target="_blank" rel="noreferrer">Brian Bolze</a></li>
-                        <li></li>
-                    </ul>
-                    <!-- <div class="col-xs-12" style="height:50px;"></div> -->
-                    <!-- <h4>© 2022 -- Standish Spring Investments, LLC</h4> -->
-                    <!-- <p><a href="https://www.linkedin.com/company/standishspring">LinkedIn</a> ⋅ <a href="https://www.crunchbase.com/organization/standish-spring-investments">CrunchBase</a></p> -->
-                </div>
+<body class="antialiased">
+    <main class="flex flex-col md:flex-row h-screen">
+        <div class="w-full h-1/3 md:h-full md:w-1/2 p-0">
+            <div class="image-section"></div>
+        </div>
+        <div class="w-full md:w-1/2 py-4 pl-4 pr-1">
+            <div class="content-section">
+                <h4 class="text-base">Based in Duxbury, MA 02332</h4>
+                <div class="mt-4"></div>
+                <h1 class="text-[2.6rem] font-medium">We invest in <span class="text-emerald-600">founders.</span></h1>
+                <div class="mt-4"></div>
+                <div class="mt-4"></div>
+                <h4 class="text-base mb-2">Areas</h4>
+                <ul class="list-none list-inside">
+                    <li>Energy Transition</li>
+                    <li>Global Supply Chain</li>
+                    <li>Consumer Tech</li>
+                    <li>Local Businesses</li>
+                </ul>
+                <div class="mt-4"></div>
+                <div class="mt-4"></div>
+                <h4 class="text-base mb-2">About Us</h4>
+                <ul class="list-none list-inside">
+                    <li><a href="https://www.linkedin.com/in/steve-bolze-8315aba1" target="_blank" rel="noreferrer" class="text-gray-800 hover:text-gray-600">Steve Bolze</a></li>
+                    <li><a href="https://brianbolze.com" target="_blank" rel="noreferrer" class="text-inherit">Brian Bolze</a></li>
+                </ul>
             </div>
         </div>
     </main>
 
     <section>
         <div class="portfolio-section">
-            <h2>Portfolio Companies</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <a href="https://acelerex.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/accelerex.webp);">
-                            <h5>Acelerex</h5>
-                            <p>SaaS for planning and operating distributed energy assets.</p>
+            <h2 class="text-2xl">Portfolio Companies</h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="portfolio-grid grid grid-cols-2 gap-4 min-h-[300px]">
+                    <div class="portfolio-item">
+                        <a href="https://acelerex.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/accelerex.webp);">
+                                <h5 class="text-xl">Acelerex</h5>
+                                <p>SaaS for planning and operating distributed energy assets.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://www.verdegoaero.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/verdego-aero.webp);">
+                                <h5 class="text-xl">VerdeGo Aero</h5>
+                                <p>Hybrid-electric powertrains for sustainable aviation.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://www.euclidpower.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/euclid.webp);">
+                                <h5 class="text-xl">Euclid</h5>
+                                <p>Enabling rapid deployment of solar and energy storage.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://www.wattch.io/" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/wattch.webp);">
+                                <!-- <img src="assets/images/wattch.webp" alt="Wattch"> -->
+                                <h5 class="text-xl">Wattch</h5>
+                                <p>Critical APIs for the increasingly distributed power grid.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://www.pellucere.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/pellucere.webp);">
+                                <h5 class="text-xl">Pellucere</h5>
+                                <p>Advanced Optical Coatings for Energy and Industry.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://www.verde-technologies.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/verde.webp);">
+                                <h5 class="text-xl">Verde Technologies</h5>
+                                <p>Next-gen approach to solar panels using Perovskites.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://ingu.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/ingu.webp);">
+                                <h5 class="text-xl">Ingu</h5>
+                                <p>Cutting-edge sensors and software for pipeline inspection.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://odysseyenergysolutions.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/Odyssey.webp);">
+                                <h5 class="text-xl">Odyssey Energy Solutions</h5>
+                                <p>Unleashing the distributed renewable energy revolution.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://jolt.energy" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/jolt.webp);">
+                                <h5 class="text-xl">Jolt Energy</h5>
+                                <p>Ultra-fast electric vehicle charging stations.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://www.fluxmarine.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/flux.webp);">
+                                <h5 class="text-xl">Flux Marine</h5>
+                                <p>Fully electric outboard engines for boats.</p>
+                            </div>
+                        </a>
+                    </div><div class="portfolio-item">
+                        <a href="https://hyperice.com/core-by-hyperice/" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/core.webp);">
+                                <h5 class="text-xl">Core by Hyperice</h5>
+                                <p>Handheld device and content app for meditation.</p>
+                            </div>
+                        </a>
+                        <!-- <a href="https://atlasbars.com" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/atlas.webp);">
+                                <h5 class="text-xl">Atlas Bars</h5>
+                                <p>Clean, high-performance protein bar for active lifestyles.</p>
+                            </div>
+                        </a> -->
+                    </div><div class="portfolio-item">
+                        <a href="https://mobeus.com/" target="_blank" rel="noreferrer">
+                            <div class="portfolio-img" style="background-image: url(assets/images/mobeus.webp);">
+                                <h5 class="text-xl">Mobeus</h5>
+                                <p>Next generation technology for the metaverse.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                    <a href="https://phoenixtailings.com" target="_blank" rel="noreferrer">
+                        <div class="portfolio-img" style="background-image: url(assets/images/phoenix.webp);">
+                            <h5 class="text-xl">Phoenix Tailings</h5>
+                            <p>Sustainable rare metal mining technologies.</p>
                         </div>
                     </a>
-                </div><div class="portfolio-item">
-                    <a href="https://www.verdegoaero.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/verdego-aero.webp);">
-                            <h5>VerdeGo Aero</h5>
-                            <p>Hybrid-electric powertrains for sustainable aviation.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://www.euclidpower.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/euclid.webp);">
-                            <h5>Euclid</h5>
-                            <p>Enabling rapid deployment of solar and energy storage.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://www.wattch.io/" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/wattch.webp);">
-                            <!-- <img src="assets/images/wattch.webp" alt="Wattch"> -->
-                            <h5>Wattch</h5>
-                            <p>Critical APIs for the increasingly distributed power grid.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://www.pellucere.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/pellucere.webp);">
-                            <h5>Pellucere</h5>
-                            <p>Advanced Optical Coatings for Energy and Industry.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://www.verde-technologies.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/verde.webp);">
-                            <h5>Verde Technologies</h5>
-                            <p>Next-gen approach to solar panels using Perovskites.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://ingu.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/ingu.webp);">
-                            <h5>Ingu</h5>
-                            <p>Cutting-edge sensors and software for pipeline inspection.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://odysseyenergysolutions.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/Odyssey.webp);">
-                            <h5>Odyssey Energy Solutions</h5>
-                            <p>Unleashing the distributed renewable energy revolution.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://jolt.energy" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/jolt.webp);">
-                            <h5>Jolt Energy</h5>
-                            <p>Ultra-fast electric vehicle charging stations.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://www.fluxmarine.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/flux.webp);">
-                            <h5>Flux Marine</h5>
-                            <p>Fully electric outboard engines for boats.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://atlasbars.com" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/atlas.webp);">
-                            <h5>Atlas Bars</h5>
-                            <p>Clean, high-performance protein bar for active lifestyles.</p>
-                        </div>
-                    </a>
-                </div><div class="portfolio-item">
-                    <a href="https://mobeus.com/" target="_blank" rel="noreferrer">
-                        <div class="portfolio-img" style="background-image: url(assets/images/mobeus.webp);">
-                            <h5>Mobeus</h5>
-                            <p>Next generation technology for the metaverse.</p>
-                        </div>
-                    </a>
+                </div>
                 </div>
             </div>
         </div>
     </section>
     
     <footer>
-        <div class="container">
+        <div class="container space-y-2 mb-8">
             <h4>© 2022 ⸺ Standish Spring Investments, LLC</h4>
             <p><a href="https://www.linkedin.com/company/standishspring" target="_blank" rel="noreferrer">LinkedIn</a> ⋅ <a href="https://www.crunchbase.com/organization/standish-spring-investments" target="_blank" rel="noreferrer">CrunchBase</a></p>
         </div>

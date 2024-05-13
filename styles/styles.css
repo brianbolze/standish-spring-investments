@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 body, html {
     margin: 0;
     font-family: 'Lora', serif;
@@ -80,19 +84,8 @@ a:hover {
     padding-bottom: 2rem;
 }
 
-.portfolio-grid {
-    display: grid; /* Change this line */
-    grid-template-columns: repeat(auto-fill, minmax(46%, 1fr)); /* Add this line */
-    gap: 1.5rem;
-    padding-bottom: 2rem;
-    box-sizing: border-box; /* Add this line to prevent horizontal scrolling */
-}
-
 .portfolio-item {
-    min-height: 300px; /* Add a minimum height to ensure enough space for content */
-    overflow: hidden; /* Add this line to hide any content that might overflow */
-    border-radius: 4px; /* Add this line to round corners of the portfolio item */
-    transition: 0.3s;
+    @apply min-h-80 overflow-hidden rounded transition duration-300
 }
 
 .portfolio-img {
